@@ -1,5 +1,5 @@
 from pymatting import cutout
-
+print('ol')
 cutout(
     # input image path
     "new_image.jpg",
