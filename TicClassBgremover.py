@@ -80,7 +80,15 @@ class bgremover:
         PILbg = PILbg.resize((size, size), Image.ANTIALIAS)
 
         return PILimage, PILbg
+    
+    '''load 一个img，变方，缩放 输出为PIL格式'''
+    def load_PILimg(self, file_img='./dataset/demo/2.jpg',size=1024):
+        PILimage = Image.open(file_img).convert('RGB')
+        PILimage = self.square_pad(PILimage, 0)
+        PILimage = PILimage.resize((size, size), Image.ANTIALIAS)
 
+        return PILimage
+    
     def showPil2CV2(self, img, winname='1'):
         cv2.imshow(winname, cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR))
         cv2.waitKey(1)

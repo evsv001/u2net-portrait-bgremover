@@ -6,7 +6,7 @@ print('start...')
 br=TicClassBgremover.bgremover()
 device='cuda'
 model = br.load_model(device=device)
-fimg, bimg = br.load_img(file_img='./dataset/demo/2.jpg',file_bg='./dataset/demo/bj.jpg',size=256)
+fimg, bimg = br.load_img(file_img='./dataset/demo/sxt.jpg',file_bg='./dataset/demo/bj.jpg',size=256)
 # br.showPil2CV2( fimg,'1')
 # br.showPil2CV2(bimg,'2')
 print('ai ......')
