@@ -6,7 +6,7 @@ print('start...')
 br=TicClassBgremover.bgremover()
 device='cpu'
 model = br.load_model(device=device)
-fimg = br.load_PILimg(file_img='./dataset/demo/lsj.jpg',size=1024)
+fimg = br.load_PILimg(file_img='./dataset/demo/zy.jpg',size=1024)
 print('ai ......')
 y=br.ai(fimg, model, device=device)
 print('mask ......')

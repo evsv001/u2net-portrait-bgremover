@@ -1,0 +1,1 @@
+d:\ML\venv\Tvenv\Scripts\python.exe recordSound.py
